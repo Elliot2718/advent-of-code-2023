@@ -1,0 +1,1 @@
+select sum(calibration_value) from calibration_value
