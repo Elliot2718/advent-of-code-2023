@@ -1,0 +1,329 @@
+[0m15:23:01.097111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109933c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10920ea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109944f50>]}
+
+
+============================== 15:23:01.100171 | 9385ca52-9ca1-4b04-b5d3-8d9abae15ffa ==============================
+[0m15:23:01.100171 [info ] [MainThread]: Running with dbt=1.7.3
+[0m15:23:01.100501 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/Elliot.Wargo/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:01.100792 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/Elliot.Wargo/.dbt')}
+[0m15:23:01.100962 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m15:23:16.817136 [debug] [MainThread]: Starter project path: /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m15:23:16.838198 [info ] [MainThread]: 
+Your new dbt project "advent_of_code_2023" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:23:16.838584 [info ] [MainThread]: Setting up your profile.
+[0m15:23:20.478640 [info ] [MainThread]: Profile advent_of_code_2023 written to /Users/Elliot.Wargo/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:23:20.537218 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 19.468864, "process_user_time": 0.953914, "process_kernel_time": 0.223627, "process_mem_max_rss": "134299648", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:23:20.537667 [debug] [MainThread]: Command `dbt init` succeeded at 15:23:20.537588 after 19.47 seconds
+[0m15:23:20.537879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092aa5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106329c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109559090>]}
+[0m15:23:20.538102 [debug] [MainThread]: Flushing usage events
+[0m15:25:16.019756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10703df10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a0b8150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a0b8350>]}
+
+
+============================== 15:25:16.022571 | fb487c12-ee59-40a3-9a27-a8476b14d4dc ==============================
+[0m15:25:16.022571 [info ] [MainThread]: Running with dbt=1.7.3
+[0m15:25:16.022905 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/logs', 'version_check': 'True', 'profiles_dir': '/Users/Elliot.Wargo/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:25:16.023235 [info ] [MainThread]: dbt version: 1.7.3
+[0m15:25:16.023401 [info ] [MainThread]: python version: 3.11.4
+[0m15:25:16.023551 [info ] [MainThread]: python path: /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/env/bin/python
+[0m15:25:16.023685 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m15:25:16.025467 [info ] [MainThread]: Using profiles dir at /Users/Elliot.Wargo/.dbt
+[0m15:25:16.025635 [info ] [MainThread]: Using profiles.yml file at /Users/Elliot.Wargo/.dbt/profiles.yml
+[0m15:25:16.025761 [info ] [MainThread]: Using dbt_project.yml file at /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/dbt_project.yml
+[0m15:25:16.057365 [info ] [MainThread]: Configuration:
+[0m15:25:16.057684 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:25:16.057844 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:25:16.057989 [info ] [MainThread]: Required dependencies:
+[0m15:25:16.058218 [debug] [MainThread]: Executing "git --help"
+[0m15:25:16.079230 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:25:16.079923 [debug] [MainThread]: STDERR: "b''"
+[0m15:25:16.080158 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:25:16.080354 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:25:16.080526 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:25:16.080665 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'dev'
+
+
+[0m15:25:16.083202 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.097833455, "process_user_time": 0.929495, "process_kernel_time": 0.19382, "process_mem_max_rss": "120176640", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:25:16.083723 [debug] [MainThread]: Command `dbt debug` failed at 15:25:16.083633 after 0.10 seconds
+[0m15:25:16.084008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119d161d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f01850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f01810>]}
+[0m15:25:16.084274 [debug] [MainThread]: Flushing usage events
+[0m15:26:06.562201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b175210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2da2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2da4d0>]}
+
+
+============================== 15:26:06.566539 | 8dd5cc36-0f27-43e9-b120-b64a78180955 ==============================
+[0m15:26:06.566539 [info ] [MainThread]: Running with dbt=1.7.3
+[0m15:26:06.566918 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Elliot.Wargo/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:26:06.567257 [info ] [MainThread]: dbt version: 1.7.3
+[0m15:26:06.567428 [info ] [MainThread]: python version: 3.11.4
+[0m15:26:06.567581 [info ] [MainThread]: python path: /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/env/bin/python
+[0m15:26:06.567719 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m15:26:06.569652 [info ] [MainThread]: Using profiles dir at /Users/Elliot.Wargo/.dbt
+[0m15:26:06.569814 [info ] [MainThread]: Using profiles.yml file at /Users/Elliot.Wargo/.dbt/profiles.yml
+[0m15:26:06.569947 [info ] [MainThread]: Using dbt_project.yml file at /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/dbt_project.yml
+[0m15:26:06.603777 [info ] [MainThread]: Configuration:
+[0m15:26:06.604073 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:26:06.604226 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:26:06.604368 [info ] [MainThread]: Required dependencies:
+[0m15:26:06.604581 [debug] [MainThread]: Executing "git --help"
+[0m15:26:06.618899 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:26:06.619539 [debug] [MainThread]: STDERR: "b''"
+[0m15:26:06.619733 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:26:06.619903 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:26:06.620056 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:26:06.620187 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'default'
+
+
+[0m15:26:06.622352 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.10053104, "process_user_time": 0.934999, "process_kernel_time": 0.187459, "process_mem_max_rss": "121044992", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:26:06.622786 [debug] [MainThread]: Command `dbt debug` failed at 15:26:06.622703 after 0.10 seconds
+[0m15:26:06.623061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5f2650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa0dc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9f47d0>]}
+[0m15:26:06.623310 [debug] [MainThread]: Flushing usage events
+[0m15:26:27.557100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e32e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10765aa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107658e50>]}
+
+
+============================== 15:26:27.560763 | 47961a16-e673-4fc1-8afa-e59352472a6a ==============================
+[0m15:26:27.560763 [info ] [MainThread]: Running with dbt=1.7.3
+[0m15:26:27.561146 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Elliot.Wargo/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:26:27.561515 [info ] [MainThread]: dbt version: 1.7.3
+[0m15:26:27.561683 [info ] [MainThread]: python version: 3.11.4
+[0m15:26:27.561836 [info ] [MainThread]: python path: /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/env/bin/python
+[0m15:26:27.561978 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m15:26:27.563930 [info ] [MainThread]: Using profiles dir at /Users/Elliot.Wargo/.dbt
+[0m15:26:27.564090 [info ] [MainThread]: Using profiles.yml file at /Users/Elliot.Wargo/.dbt/profiles.yml
+[0m15:26:27.564216 [info ] [MainThread]: Using dbt_project.yml file at /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/dbt_project.yml
+[0m15:26:27.596337 [info ] [MainThread]: Configuration:
+[0m15:26:27.596647 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:26:27.596819 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:26:27.596963 [info ] [MainThread]: Required dependencies:
+[0m15:26:27.597181 [debug] [MainThread]: Executing "git --help"
+[0m15:26:27.612679 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:26:27.613224 [debug] [MainThread]: STDERR: "b''"
+[0m15:26:27.613503 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:26:27.613738 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:26:27.613911 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:26:27.614049 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'default'
+
+
+[0m15:26:27.616369 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.09632142, "process_user_time": 0.933554, "process_kernel_time": 0.186351, "process_mem_max_rss": "119799808", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:26:27.616749 [debug] [MainThread]: Command `dbt debug` failed at 15:26:27.616673 after 0.10 seconds
+[0m15:26:27.617036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107634790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e32b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e32e50>]}
+[0m15:26:27.617293 [debug] [MainThread]: Flushing usage events
+[0m15:27:08.431968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064c9210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064e05d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ada390>]}
+
+
+============================== 15:27:08.435557 | eb9b49a8-5f3b-40a5-9942-8efc506ffb1c ==============================
+[0m15:27:08.435557 [info ] [MainThread]: Running with dbt=1.7.3
+[0m15:27:08.435953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/logs', 'version_check': 'True', 'profiles_dir': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:27:08.436305 [info ] [MainThread]: dbt version: 1.7.3
+[0m15:27:08.436475 [info ] [MainThread]: python version: 3.11.4
+[0m15:27:08.436630 [info ] [MainThread]: python path: /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/env/bin/python
+[0m15:27:08.436772 [info ] [MainThread]: os info: macOS-14.1.1-arm64-arm-64bit
+[0m15:27:08.506238 [info ] [MainThread]: Using profiles dir at /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023
+[0m15:27:08.506565 [info ] [MainThread]: Using profiles.yml file at /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/profiles.yml
+[0m15:27:08.506737 [info ] [MainThread]: Using dbt_project.yml file at /Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/dbt_project.yml
+[0m15:27:08.507568 [info ] [MainThread]: adapter type: duckdb
+[0m15:27:08.507882 [info ] [MainThread]: adapter version: 1.7.0
+[0m15:27:08.540504 [info ] [MainThread]: Configuration:
+[0m15:27:08.540851 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:27:08.541019 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:27:08.541168 [info ] [MainThread]: Required dependencies:
+[0m15:27:08.541383 [debug] [MainThread]: Executing "git --help"
+[0m15:27:08.557696 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:27:08.558478 [debug] [MainThread]: STDERR: "b''"
+[0m15:27:08.558775 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:27:08.559351 [info ] [MainThread]: Connection:
+[0m15:27:08.559613 [info ] [MainThread]:   database: memory
+[0m15:27:08.559770 [info ] [MainThread]:   schema: main
+[0m15:27:08.559908 [info ] [MainThread]:   path: :memory:
+[0m15:27:08.560037 [info ] [MainThread]:   config_options: None
+[0m15:27:08.560157 [info ] [MainThread]:   extensions: None
+[0m15:27:08.560275 [info ] [MainThread]:   settings: None
+[0m15:27:08.560392 [info ] [MainThread]:   external_root: .
+[0m15:27:08.560513 [info ] [MainThread]:   use_credential_provider: None
+[0m15:27:08.560629 [info ] [MainThread]:   attach: None
+[0m15:27:08.560741 [info ] [MainThread]:   filesystems: None
+[0m15:27:08.560854 [info ] [MainThread]:   remote: None
+[0m15:27:08.560967 [info ] [MainThread]:   plugins: None
+[0m15:27:08.561227 [info ] [MainThread]:   disable_transactions: False
+[0m15:27:08.561581 [info ] [MainThread]: Registered adapter: duckdb=1.7.0
+[0m15:27:08.580817 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m15:27:08.581479 [debug] [MainThread]: Using duckdb connection "debug"
+[0m15:27:08.581658 [debug] [MainThread]: On debug: select 1 as id
+[0m15:27:08.581821 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:27:08.586259 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:27:08.587087 [debug] [MainThread]: On debug: Close
+[0m15:27:08.587335 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:27:08.587517 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:27:08.590878 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.19494721, "process_user_time": 1.00191, "process_kernel_time": 0.2049, "process_mem_max_rss": "137740288", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:27:08.591905 [debug] [MainThread]: Command `dbt debug` succeeded at 15:27:08.591693 after 0.20 seconds
+[0m15:27:08.592507 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:27:08.592742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10698a210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10698b950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069dea10>]}
+[0m15:27:08.593191 [debug] [MainThread]: Flushing usage events
+[0m15:28:10.752201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105705c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108258250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108593950>]}
+
+
+============================== 15:28:10.756294 | cbe0578b-ab49-45bf-b2b6-db051fd790f6 ==============================
+[0m15:28:10.756294 [info ] [MainThread]: Running with dbt=1.7.3
+[0m15:28:10.756658 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/Elliot.Wargo/Documents/projects/advent-of-code-2023/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -s test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:28:10.876470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108915250>]}
+[0m15:28:10.913084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c4ce50>]}
+[0m15:28:10.915435 [info ] [MainThread]: Registered adapter: duckdb=1.7.0
+[0m15:28:10.929635 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m15:28:10.930493 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:28:10.930750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ce1b10>]}
+[0m15:28:11.375845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e1c050>]}
+[0m15:28:11.382913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109220c90>]}
+[0m15:28:11.383176 [info ] [MainThread]: Found 1 model, 1 source, 0 exposures, 0 metrics, 391 macros, 0 groups, 0 semantic models
+[0m15:28:11.383349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f88090>]}
+[0m15:28:11.383945 [info ] [MainThread]: 
+[0m15:28:11.384305 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:28:11.384963 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_memory'
+[0m15:28:11.390230 [debug] [ThreadPool]: Using duckdb connection "list_memory"
+[0m15:28:11.390482 [debug] [ThreadPool]: On list_memory: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_memory"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"memory"'
+    
+  
+  
+[0m15:28:11.390633 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:28:11.394302 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:28:11.395199 [debug] [ThreadPool]: On list_memory: Close
+[0m15:28:11.395738 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_memory, now create_memory_main)
+[0m15:28:11.396058 [debug] [ThreadPool]: Creating schema "database: "memory"
+schema: "main"
+"
+[0m15:28:11.398211 [debug] [ThreadPool]: Using duckdb connection "create_memory_main"
+[0m15:28:11.398376 [debug] [ThreadPool]: On create_memory_main: BEGIN
+[0m15:28:11.398504 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:28:11.398700 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:28:11.398825 [debug] [ThreadPool]: Using duckdb connection "create_memory_main"
+[0m15:28:11.398950 [debug] [ThreadPool]: On create_memory_main: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "create_memory_main"} */
+create schema if not exists "memory"."main"
+[0m15:28:11.399224 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:28:11.399620 [debug] [ThreadPool]: On create_memory_main: COMMIT
+[0m15:28:11.399748 [debug] [ThreadPool]: Using duckdb connection "create_memory_main"
+[0m15:28:11.399861 [debug] [ThreadPool]: On create_memory_main: COMMIT
+[0m15:28:11.400005 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:28:11.400144 [debug] [ThreadPool]: On create_memory_main: Close
+[0m15:28:11.400949 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_memory_main, now list_memory_main)
+[0m15:28:11.403463 [debug] [ThreadPool]: Using duckdb connection "list_memory_main"
+[0m15:28:11.403623 [debug] [ThreadPool]: On list_memory_main: BEGIN
+[0m15:28:11.403748 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:28:11.403931 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:28:11.404051 [debug] [ThreadPool]: Using duckdb connection "list_memory_main"
+[0m15:28:11.404179 [debug] [ThreadPool]: On list_memory_main: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_memory_main"} */
+select
+      'memory' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'memory'
+  
+[0m15:28:11.415787 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:28:11.422489 [debug] [ThreadPool]: On list_memory_main: ROLLBACK
+[0m15:28:11.424362 [debug] [ThreadPool]: Failed to rollback 'list_memory_main'
+[0m15:28:11.424716 [debug] [ThreadPool]: On list_memory_main: Close
+[0m15:28:11.425440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10825a810>]}
+[0m15:28:11.425715 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:11.425861 [debug] [MainThread]: On master: BEGIN
+[0m15:28:11.425989 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:28:11.426244 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:28:11.426373 [debug] [MainThread]: On master: COMMIT
+[0m15:28:11.426493 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:11.426611 [debug] [MainThread]: On master: COMMIT
+[0m15:28:11.426761 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:28:11.426883 [debug] [MainThread]: On master: Close
+[0m15:28:11.427179 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:28:11.427332 [info ] [MainThread]: 
+[0m15:28:11.433480 [debug] [Thread-1 (]: Began running node model.advent_of_code_2023.test
+[0m15:28:11.433807 [info ] [Thread-1 (]: 1 of 1 START sql view model main.test .......................................... [RUN]
+[0m15:28:11.434243 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_memory_main, now model.advent_of_code_2023.test)
+[0m15:28:11.434448 [debug] [Thread-1 (]: Began compiling node model.advent_of_code_2023.test
+[0m15:28:11.438001 [debug] [Thread-1 (]: Writing injected SQL for node "model.advent_of_code_2023.test"
+[0m15:28:11.439394 [debug] [Thread-1 (]: Timing info for model.advent_of_code_2023.test (compile): 15:28:11.434559 => 15:28:11.439232
+[0m15:28:11.439592 [debug] [Thread-1 (]: Began executing node model.advent_of_code_2023.test
+[0m15:28:11.455645 [debug] [Thread-1 (]: Writing runtime sql for node "model.advent_of_code_2023.test"
+[0m15:28:11.457098 [debug] [Thread-1 (]: Using duckdb connection "model.advent_of_code_2023.test"
+[0m15:28:11.457317 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: BEGIN
+[0m15:28:11.457483 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:28:11.457763 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:28:11.457908 [debug] [Thread-1 (]: Using duckdb connection "model.advent_of_code_2023.test"
+[0m15:28:11.458055 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "node_id": "model.advent_of_code_2023.test"} */
+
+  
+  create view "memory"."main"."test__dbt_tmp" as (
+    select * from read_csv('data/day1.csv', auto_detect=true, ignore_errors=1, header=false)
+  );
+
+[0m15:28:11.470486 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:28:11.473715 [debug] [Thread-1 (]: Using duckdb connection "model.advent_of_code_2023.test"
+[0m15:28:11.473906 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "node_id": "model.advent_of_code_2023.test"} */
+alter view "memory"."main"."test__dbt_tmp" rename to "test"
+[0m15:28:11.474210 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:28:11.480597 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: COMMIT
+[0m15:28:11.480856 [debug] [Thread-1 (]: Using duckdb connection "model.advent_of_code_2023.test"
+[0m15:28:11.481019 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: COMMIT
+[0m15:28:11.481260 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:28:11.483561 [debug] [Thread-1 (]: Using duckdb connection "model.advent_of_code_2023.test"
+[0m15:28:11.483741 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "default", "target_name": "dev", "node_id": "model.advent_of_code_2023.test"} */
+drop view if exists "memory"."main"."test__dbt_backup" cascade
+[0m15:28:11.483991 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:28:11.484627 [debug] [Thread-1 (]: Timing info for model.advent_of_code_2023.test (execute): 15:28:11.439687 => 15:28:11.484538
+[0m15:28:11.484788 [debug] [Thread-1 (]: On model.advent_of_code_2023.test: Close
+[0m15:28:11.485126 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbe0578b-ab49-45bf-b2b6-db051fd790f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108914a50>]}
+[0m15:28:11.485388 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.test ..................................... [[32mOK[0m in 0.05s]
+[0m15:28:11.485629 [debug] [Thread-1 (]: Finished running node model.advent_of_code_2023.test
+[0m15:28:11.486373 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:11.486564 [debug] [MainThread]: On master: BEGIN
+[0m15:28:11.486697 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:28:11.486894 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:28:11.487020 [debug] [MainThread]: On master: COMMIT
+[0m15:28:11.487142 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:11.487257 [debug] [MainThread]: On master: COMMIT
+[0m15:28:11.487403 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:28:11.487527 [debug] [MainThread]: On master: Close
+[0m15:28:11.487785 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:28:11.487901 [debug] [MainThread]: Connection 'model.advent_of_code_2023.test' was properly closed.
+[0m15:28:11.488040 [info ] [MainThread]: 
+[0m15:28:11.488197 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m15:28:11.488460 [debug] [MainThread]: Command end result
+[0m15:28:11.494050 [info ] [MainThread]: 
+[0m15:28:11.494290 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:28:11.494440 [info ] [MainThread]: 
+[0m15:28:11.494591 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:28:11.495762 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.7744906, "process_user_time": 1.517501, "process_kernel_time": 0.213835, "process_mem_max_rss": "152682496", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:28:11.496026 [debug] [MainThread]: Command `dbt run` succeeded at 15:28:11.495972 after 0.77 seconds
+[0m15:28:11.496202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108238090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10826c4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037449d0>]}
+[0m15:28:11.496378 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,1 @@
+{"_invocation_id": "cbe0578b-ab49-45bf-b2b6-db051fd790f6", "linked": {"0": {"name": "source.advent_of_code_2023.advent.day1", "type": "source", "succ": [1]}, "1": {"name": "model.advent_of_code_2023.test", "type": "model"}}}

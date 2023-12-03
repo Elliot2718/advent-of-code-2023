@@ -1,0 +1,1 @@
+select sum(calibration_value) from day1_1_calibration_value
