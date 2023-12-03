@@ -1,4 +1,4 @@
-copy (
+
 with
 source as (select column0 as string, row_number() over (order by Null) as rn from read_csv('data/day1.csv', auto_detect=true, ignore_errors=1, header=false)),
 
@@ -49,27 +49,16 @@ matching as (
 ),
 
 first_last as (
-    select
-        *
-    from matching
-    where is_match
-    qualify (
-        row_number() over (partition by string order by start_index) = 1 or
-        row_number() over (partition by string order by start_index desc) = 1
-    )
-    order by string, start_index
-),
-
-calibration_value as (
-    select
+    select distinct
         string,
         rn,
-        cast(first(number_match) || last(number_match) as int) as calibration_value
-    from first_last
-    group by 1,2
+        cast(first(number_match) over (partition by string order by start_index asc) ||
+        first(number_match) over (partition by string order by start_index desc) as int) as calibration_value
+    from matching
+    where is_match
 )
 
-select string, calibration_value from calibration_value
---where string = 'seven4rbzxgvrktq4mrrcvhgrkhsxmgtkzslzhzsrn'
-order by rn
-) to 'day1_2.txt';
+select sum(calibration_value) from first_last
+
+
+;

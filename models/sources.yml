@@ -1,6 +1,0 @@
-sources:
-  - name: advent
-    tables:
-      - name: day1
-        meta:
-          external_location: "read_csv('data/day1.csv', auto_detect=true, ignore_errors=1, header=false)"
