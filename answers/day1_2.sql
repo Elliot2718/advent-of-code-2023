@@ -1,4 +1,3 @@
-
 with
 source as (select column0 as string, row_number() over (order by Null) as rn from read_csv('data/day1.csv', auto_detect=true, ignore_errors=1, header=false)),
 
