@@ -10,7 +10,7 @@ Is it fun to try anyways? *I hope so!* 😛
 
 # Approach
 - I'm using the [DuckDB](https://duckdb.org/) CLI in VSCode. Motherduck has a [great little tutorial](https://motherduck.com/blog/duckdb-tutorial-for-beginners/) on how to do this!
-- My goal is learning, so I'm generally avoiding the use of ChatGPT and Copilot, with some exceptions:
+- I want solve the problems myself, so I'm generally avoiding the use of ChatGPT and Copilot, with some exceptions:
     - regex! I don't want to figure this out on my own
     - as a Google replacement (aka asking about what functions are available in DuckDB)
 - I'm aiming to have a single query (with CTEs) for each part of each day. This violates the DRY principle, but for this I thought it would be fun to see if each part could be done in what is a single select statement.
