@@ -1,1 +1,0 @@
-select sum(calibration_value) from day1_2_calibration_value

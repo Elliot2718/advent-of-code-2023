@@ -63,12 +63,20 @@ part_numbers as (
         end as is_adjacent
     from numbers  as n cross join symbols as s
     where is_adjacent
+),
+
+gear_ratios as (
+    select
+        symbol,
+        symbol_col_index,
+        symbol_row_index,
+        count(distinct number),
+        product(cast(number as int)) as gear_ratio
+    from part_numbers
+    where symbol = '*'
+    group by 1, 2, 3
+    having count(distinct number) = 2
 )
 
-
-select
-    symbol,
-    col_index
-from part_numbers
-where symbol = '*'
+select sum(gear_ratio) from gear_ratios
 ;
