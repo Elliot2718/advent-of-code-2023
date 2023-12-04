@@ -26,6 +26,7 @@ Feeling behind when I started. But then...throw around `string_split` and `unnes
 ## Day 3
 Ok, this was my favorite so far. SQL actually worked...pretty well for this one??? Followed a similar approach to day 1 in order to extract items from the text using regex. The challenge was that I needed to extract substrings **and** record the locations of those substrings. So, for both days, I generated truncated versions of every line of text and matched the beginning. For example:
 
+```cli
 | row_index │  col  │                                                                row_text_chunk                                                                │
 │   int64   │ int64 │                                                                   varchar                                                                    │
 ├───────────┼───────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
@@ -46,7 +47,8 @@ Ok, this was my favorite so far. SQL actually worked...pretty well for this one?
 │         1 │    15 │ ............380.......................143............................108.............630...........425........................               │
 │         1 │    16 │ ...........380.......................143............................108.............630...........425........................                │
 │         1 │    17 │ ..........380.......................143............................108.............630...........425........................                 │
-
+...
+```
 
 Then I matched on the beginning of the string, allowing me to record locations. This worked pretty well!
 
