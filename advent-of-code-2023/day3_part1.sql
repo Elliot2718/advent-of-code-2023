@@ -66,5 +66,5 @@ part_numbers as (
 )
 
 
-select sum(cast(number as int)) from part_numbers
+select * exclude row_text from chunks
 ;
