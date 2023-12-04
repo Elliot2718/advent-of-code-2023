@@ -6,7 +6,7 @@ Is it practical? *Debatable*.
 
 Is is possible? *Doubtful*.
 
-Is it fun to try anyways? *I hope so!* 😛.
+Is it fun to try anyways? *I hope so!* 😛
 
 # Approach
 - I'm using the [DuckDB](https://duckdb.org/) CLI in VSCode. Motherduck has a [great little tutorial](https://motherduck.com/blog/duckdb-tutorial-for-beginners/) on how to do this!
