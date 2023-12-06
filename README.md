@@ -53,3 +53,8 @@ Ok, this was my favorite so far. SQL actually worked...pretty well for this one?
 Then I matched on the beginning of the string, allowing me to record locations. This worked pretty well!
 
 And part two was easy. Now I'm feeling like I'm overconfident 😆.
+
+## Day 4
+Tried to do this after putting the kids to bed and kept messing up the second part. Then, came back the following day after sleep, and (surprise, surprise) just figured it out...
+
+Finally had to resort to using a recursive CTE. Did I have to do this? I don't know! I'm curious if any other SQL adventers figured it out without recursion.
